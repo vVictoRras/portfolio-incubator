@@ -21,13 +21,17 @@ export const Work = (props:WorkPropsType) => {
  const StyledWork=styled.div`
  background-color: bisque;
      max-width: 50%;
-     height: 443px;
+     height: auto;
      width: 100%;
+     margin: 10px;
+    
  `
 const Image=styled.img`
-    width: 100vh;
+    width: 100%;
     height: 260px;
     object-fit: cover;
+   
+   
     
 `
 const Link=styled.a`

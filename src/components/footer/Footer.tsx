@@ -37,9 +37,9 @@ export const Footer = () => {
     );
 };
 
-const StyledFooter = styled.section`
+const StyledFooter = styled.footer`
     background-color: chartreuse;
-    min-height: 30vh;
+    min-height: 10vh;
 `
 const Name = styled.span`
 
