@@ -18,7 +18,8 @@ export const GlobalStyle = createGlobalStyle`
         sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        color: ${theme.colors.font}
+        color: ${theme.colors.font};
+        line-height: 1.2;
         
     }
 
@@ -30,6 +31,7 @@ export const GlobalStyle = createGlobalStyle`
     
     a{
         text-decoration: none;
+        color: ${theme.colors.font};
     }
     ul{
         list-style: none;
@@ -38,11 +40,23 @@ export const GlobalStyle = createGlobalStyle`
         background-color: unset;
         border: none;
     }
-    
+    section{
+        padding: 100px 0;
+    }
     section:nth-of-type(odd){
         background-color: ${theme.colors.primaryBg};
     }
     section:nth-of-type(even){
         background-color: ${theme.colors.secondaryBg};
+    }
+    h3{
+        font-family: "Josefin Sans", sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+    p{
+        font-weight: 400;
+        font-size: 14px;
     }
 `
