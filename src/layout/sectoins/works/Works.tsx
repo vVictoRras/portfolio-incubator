@@ -3,7 +3,7 @@ import {SectionTitle} from "../../../components/SectionTitle.tsx";
 import styled from "styled-components";
 import {TabMenu} from "./tabMenu/TabMenu.tsx";
 import {FlexWrapper} from "../../../components/FlexWrapper.tsx";
-import {Work} from "./work/work.tsx";
+import {Work} from "./work/Work.tsx";
 import socialImg from "../../../assets/images/proj1.webp"
 import timerImage from "../../../assets/images/proj2.webp"
 import {Container} from "../../../components/Container.tsx";
@@ -16,7 +16,7 @@ export const Works = () => {
             <Container>
                 <SectionTitle>My Works</SectionTitle>
                 <TabMenu menuItems={worksItems}></TabMenu>
-                <FlexWrapper justify={"space-between"}>
+                <FlexWrapper justify={"space-between"} align={'flex-start'}>
                     <Work   src={socialImg}
                             title={'Social Network'}
                             text={'Lorem ipsum dolor sit amet, consectetur adipisicing elit, ' +

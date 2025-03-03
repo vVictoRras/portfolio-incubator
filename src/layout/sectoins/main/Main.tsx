@@ -75,6 +75,7 @@ const Name = styled.h2`
             width: 100%;
             height: 20px;
             background-color: ${theme.colors.accentBg};
+            
             position: absolute;
             bottom: 0;
             z-index: -1;
