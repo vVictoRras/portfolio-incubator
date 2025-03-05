@@ -1,7 +1,6 @@
 import React from 'react';
 import {Icon} from "../../../../components/icon/Icon.tsx";
 import styled from "styled-components";
-import {Container} from "../../../../components/Container.tsx";
 import {FlexWrapper} from "../../../../components/FlexWrapper.tsx";
 
 type SkillPropsType = {
@@ -37,7 +36,6 @@ const StyledSkill = styled.div`
 `
 const SkillTitle = styled.h3`
     margin: 70px 0 15px;
-    
     text-transform: uppercase;
 
 `
@@ -45,7 +43,7 @@ const SkillText = styled.p`
     text-align: center;
     
 `
-const IconWrapper = styled.div`
+export const IconWrapper = styled.div`
  position: relative;
     
     

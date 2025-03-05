@@ -32,6 +32,10 @@ const StyledHeaderMenu = styled.nav`
         gap: 30px;
         justify-content: center;
     }
+
+@media ${theme.media.tablet} {
+    display: none;
+    
 `
 const Mask = styled.span`
     position: absolute;
@@ -51,10 +55,12 @@ const Mask = styled.span`
         }
     }
 
+}
 `
 
 const ListItem = styled.li`
     position: relative;
+    
     &::before {
     content: '';
     display: inline-block;
