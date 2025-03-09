@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from "styled-components";
-import {SectionTitle} from "../SectionTitle.tsx";
-import {Button} from "../Button.tsx";
-import {Container} from "../Container.tsx";
-import {FlexWrapper} from "../FlexWrapper.tsx";
+import {SectionTitle} from "../SectionTitle.ts";
+import {Button} from "../Button.ts";
+import {Container} from "../Container.ts";
+import {FlexWrapper} from "../FlexWrapper.ts";
 
 export const Slogan = () => {
     return (
@@ -11,12 +11,10 @@ export const Slogan = () => {
             <Container>
                 <FlexWrapper direction={'column'}
                              align={'center'}>
-                    <SectionTitle>SLOGAN!!!!!</SectionTitle>
+                    <SectionTitle>I'm available for job</SectionTitle>
                     <Button>Hire me</Button>
                 </FlexWrapper>
-
             </Container>
-
         </StyledSlogan>
     );
 };
