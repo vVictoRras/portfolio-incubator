@@ -1,7 +1,7 @@
 import {theme} from "../styles/Theme.tsx";
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 
-export const Link = styled.a`
+export const Link = styled.a<{active?: boolean}>`
     font-weight: 400;
     font-size: 14px;
     letter-spacing: 1px;
@@ -19,7 +19,6 @@ export const Link = styled.a`
     &::before {
         content: ' ';
         display: inline-block;
-        //height: 10px;
         background-color: ${theme.colors.accentBg};
 
         position: absolute;
@@ -27,5 +26,9 @@ export const Link = styled.a`
         left: 0;
         right: 0;
         z-index: -1;
-    }
+        
+        ${props =>props.active && css<{active?: boolean}>`
+      height: 10px;
+`}
+}  
 `

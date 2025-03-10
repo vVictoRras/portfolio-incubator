@@ -3,9 +3,11 @@ import {theme} from "../../styles/Theme.tsx";
 
 const Slider = styled.div`
     max-width: 500px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 1px solid red;
 `
 const Name = styled.span`
     font-family: 'Josefin Sans', sans-serif;

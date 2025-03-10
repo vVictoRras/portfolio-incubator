@@ -3,6 +3,8 @@ import photo from '../../../assets/images/1.webp'
 import {FlexWrapper} from "../../../components/FlexWrapper.ts";
 import {Container} from "../../../components/Container.ts";
 import {S} from './Main_Styles.ts'
+import Typewriter from 'typewriter-effect';
+import Tilt from 'react-parallax-tilt';
 
 export const Main: React.FC = () => {
     return (
@@ -11,12 +13,39 @@ export const Main: React.FC = () => {
                 <FlexWrapper align={"center"} justify={"space-around"} wrap={'wrap'}>
                     <div >
                         <S.SmallText>Hi</S.SmallText>
-                        <S.Name>I am <span>Victor Sirotilo</span></S.Name>
-                        < S.MainTitle>A Web Developer.</S.MainTitle>
+                        <S.Name>I am
+                            <Tilt className="parallax-effect-img"
+                                  tiltMaxAngleX={40}
+                                  tiltMaxAngleY={40}
+                                  perspective={800}
+                                  transitionSpeed={1500}
+                                  scale={1.1}
+                                  gyroscope={true}>
+                                <span>Victor Sirotilo</span>
+                            </Tilt>
+                            </S.Name>
+                                             < S.MainTitle>
+                            <p>A Web Developer.</p>
+                            <Typewriter
+                            options={{
+                                strings: ['A Web Developer',"A Frontend Developer","A Web Designer"],
+                                autoStart: true,
+                                loop: true,
+                                delay: 65
+                            }}
+                        /></S.MainTitle>
                     </div>
+                    <Tilt className="parallax-effect-img"
+                          tiltMaxAngleX={40}
+                          tiltMaxAngleY={40}
+                          perspective={800}
+                          transitionSpeed={1500}
+                          scale={1.1}
+                          gyroscope={true}>
                     <S.PhotoWrapper>
                         <S.Photo src={photo} alt=""/>
                     </S.PhotoWrapper>
+                        </Tilt>
                 </FlexWrapper>
             </Container>
 
